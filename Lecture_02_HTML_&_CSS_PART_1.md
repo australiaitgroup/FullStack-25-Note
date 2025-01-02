@@ -18,15 +18,13 @@
 
 #### 1. Introduction
 
-> **Addition Background Knowledge**
->
-> in 1989 something really big was born and I actually Googled earlier, big things that happened in 1989, three of the top five results were Kendrick Lamar and Taylor Swift, fortunately we're not gonna be talking about Taylor Swift but I can talk about K.dot all day. Yet what we are talking about in 1989 was the world wide web, which was invented by this guy on the left here, Tim Berners-Lee, who was working as an engineer at CERN, so it's the big sort of science place in Geneva as just an engineer and he wanted to come up with a way for them to share all the research and information, that's been gathered at CERN with people, who weren't just physically located there.
->
-> <img src="/Users/david/Documents/1.-project/craftman-web/notes/asset/01-html/html-intro.002.png" alt="500" style="zoom:33%;" />
->
-> http://info.cern.ch/hypertext/WWW/TheProject.html
->
-> So a lot of the time, scientists would come, do their research projects, gather all this data and research and stuff, go back to their home countries or wherever they're from and they wouldn't have access to it, so Tim proposed this concept of the web, which is an open platform to be able to share information easily and locate it from anywhere.
+In 1989 something really big was born and I actually Googled earlier, big things that happened in 1989, three of the top five results were Kendrick Lamar and Taylor Swift, fortunately we're not gonna be talking about Taylor Swift but I can talk about K.dot all day. Yet what we are talking about in 1989 was the world wide web, which was invented by this guy on the left here, Tim Berners-Lee, who was working as an engineer at CERN, so it's the big sort of science place in Geneva as just an engineer and he wanted to come up with a way for them to share all the research and information, that's been gathered at CERN with people, who weren't just physically located there.
+
+
+
+![](https://i.imgur.com/lr5iBw8.png)http://info.cern.ch/hypertext/WWW/TheProject.html
+
+So a lot of the time, scientists would come, do their research projects, gather all this data and research and stuff, go back to their home countries or wherever they're from and they wouldn't have access to it, so Tim proposed this concept of the web, which is an open platform to be able to share information easily and locate it from anywhere.
 
 
 
@@ -51,7 +49,7 @@ Although Ally mentioned there wouldn't be high chance for interviewers to test y
 
 What consists of modern web is 3 bodies - HTML, CSS, JavaScript.
 
-<img src="/Users/david/Documents/1.-project/craftman-web/notes/asset/01-html/html-css-js.001.png" style="zoom:33%;" />
+![](https://i.imgur.com/Sjj41Ep.png)
 
 - As you know, HTML is for content - the structure of web page.
 - CSS is for styling the webpage
@@ -168,7 +166,9 @@ Correct usage:
 
 html tags usually come in a pair.  `opening tag (start tag) + content + closing tag (end tag)`  as shown below. 
 
-<img src="/Users/david/Documents/1.-project/craftman-web/notes/asset/01-html/html-elements.webp" style="zoom:50%;" />
+
+
+![](https://i.imgur.com/ykOH9N5.png)
 
 
 
@@ -176,7 +176,11 @@ Yet there are also self-closing tags such as `<img>`, `<input>`, `<br>`
 
 There are common HTML tags as follows. [^4]
 
-<img src="/Users/david/Documents/1.-project/craftman-web/notes/asset/01-html/html-common-ags.webp" style="zoom:80%;" />
+
+
+![](https://i.imgur.com/SQqUNpk.png)
+
+
 
 
 
@@ -233,9 +237,9 @@ During the lecture we talked about `<head>`  and it contains lots of  usually ar
 
 HTML meta tags provide information about a web page to search engines and browsers. They are placed in the section of an HTML document and are not displayed on the page itself.
 
-<img src="/Users/david/Documents/1.-project/craftman-web/notes/asset/01-html/meta.png" style="zoom:55%;" />
+![](https://i.imgur.com/RjiBbKT.png)
 
-<img src="/Users/david/Documents/1.-project/craftman-web/notes/asset/01-html/meta-02.png" style="zoom:50%;" />
+<img src="https://i.imgur.com/StHbS6E.png" style="zoom:67%;" />
 
 ###### Common Meta Tags
 
@@ -300,7 +304,7 @@ Let's add proper meta tags to our web page:
 
 The basic layout is as follows:
 
-![](/Users/david/Documents/1.-project/craftman-web/notes/asset/01-html/html-common-structure.png)
+<img src="https://i.imgur.com/Eh5q1LU.png" alt="500" style="zoom:67%;" />
 
 
 
@@ -452,7 +456,7 @@ Please learn more about other tags via  [W3School](https://www.w3schools.com/htm
 
 
 
-<img src="/Users/david/Documents/1.-project/craftman-web/notes/asset/01-html/html-semantic-non-semantic.png" style="zoom:80%;" />
+<img src="https://i.imgur.com/LU0ukoh.png" style="zoom:80%;" />
 
 
 
@@ -591,7 +595,7 @@ Tables are a fundamental component of HTML used for displaying data in a structu
 - Tables can be manipulated to merge cells or adjust the size of columns and rows.
 - Tables should be used appropriately and sparingly to avoid cluttering a web page or application.
 
-<img src="/Users/david/Documents/1.-project/craftman-web/notes/asset/01-html/html-table.png" style="zoom:50%;" />
+<img src="https://i.imgur.com/4SY4MGT.png" style="zoom:50%;" />
 
 ##### `table`, `tr` and `td` Tags
 
@@ -628,7 +632,7 @@ Basic example
 
 The `border` attribute is used to provide a border width for the table and individual cells.
 
-![](/Users/david/Documents/1.-project/craftman-web/notes/asset/01-html/html-table-02.png)
+![](https://i.imgur.com/2dAikDE.png)
 
 using CSS to control the styling is recommended. Also, Ally mentioned at her work she rarely needed to use HTML table. Unless some webpage requires a specific granular details and flex box model doesn't work. She suggested it is good to test the solution of using HTML table. On other hand, if your work deals with lots of data (i.e. financial institution), HTML table may be common in use. 
 
