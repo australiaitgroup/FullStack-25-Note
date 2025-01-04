@@ -237,7 +237,11 @@ Example usage:
     <p>This paragraph IS ALSO blue</p>
 </div>
 
-<p>T
+
+
+```
+
+
 
 ##### Adjacent Sibling Selector
 
@@ -250,7 +254,10 @@ h1 + p {
 }
 ```
 
+
+
 Example usage:
+
 ```html
 <div>
     <h1>Title</h1>
@@ -472,6 +479,14 @@ h1 {
 > 💡 **Pro Tip**: When setting font-family, always include a fallback font system (serif, sans-serif, or monospace) in case the primary font isn't available.
 
 
+
+
+
+---
+
+
+
+
 ### Display Properties: Understanding Block, Inline, and Inline-Block 📦
 
 Think of HTML elements like different types of boxes in a room. Let's see how they behave!
@@ -547,6 +562,9 @@ Features:
 | **Inline** | Multiple elements per line | ❌ Cannot set directly | Width of content only | Text or other inline elements | ➡️ Only left/right work |
 | **Inline-block** | Multiple elements per line | ✅ Can set | Width of content + set width | Can contain any elements | ✅ All directions work |
 
+
+
+----
 
 ### CSS Background Properties: Making Beautiful Backgrounds 🎨
 
@@ -634,6 +652,12 @@ Think of backgrounds as the canvas for your web elements. Let's explore how to m
 > - Use `background-size: cover` for full-width images
 > - Consider loading time when using large images
 > - Use CSS gradients for better performance when possible
+
+
+
+
+
+
 
 ### The Three Core Concepts of CSS: Cascading, Inheritance, and Specificity 🎯
 
@@ -773,6 +797,12 @@ button { background: blue; }            /* Power: 0-0-1 */
 > - Use classes for most styling needs
 > - Keep specificity as low as possible for maintainability
 > - Think of IDs as special moves - use them rarely
+
+
+
+
+
+---
 
 ### The CSS Box Model: Building Blocks of Web Layout 📦
 
@@ -1001,6 +1031,9 @@ margin refers to the space between the box and other elements. (外边距)
 }
 ```
 
+---
+
+
 
 ### CSS flexbox
 
@@ -1065,11 +1098,11 @@ Before Flex vs After Flex
 
 After (`display: flex`):
 ```
-┌─────────────────────┐
+┌──────────────────────┐
 │ ┌─────┐┌─────┐┌─────┐│
 │ │  1  ││  2  ││  3  ││
 │ └─────┘└─────┘└─────┘│
-└─────────────────────┘
+└──────────────────────┘
 ```
 
 > 💡 **What Happens When You Add `display: flex`:**
@@ -1270,23 +1303,23 @@ Equal space between items
 
 Items stretch to fill container height
 
-![](https://i.imgur.com/04HMmkS.png)
+<img src="https://i.imgur.com/04HMmkS.png" style="zoom:67%;" />
 
 2. **flex-start** 
 
-![](https://i.imgur.com/Ar19efb.png)
+<img src="https://i.imgur.com/Ar19efb.png" alt="5" style="zoom:67%;" />
 
 3. **flex-end** 
 
-![](https://i.imgur.com/cawMq2j.png)
+<img src="https://i.imgur.com/cawMq2j.png" alt="5" style="zoom:67%;" />
 
 4. **center** 
 
-![](https://i.imgur.com/ltV9Pkk.png)
+<img src="https://i.imgur.com/ltV9Pkk.png" alt="5" style="zoom:67%;" />
 
 5. **baseline** 
 
-![](https://i.imgur.com/FuAyR9r.png)
+<img src="https://i.imgur.com/FuAyR9r.png" alt="5" style="zoom:67%;" />
 
 ### Understanding Flex Item Growth and Shrink 📏
 
