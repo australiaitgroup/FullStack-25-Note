@@ -7,28 +7,76 @@
 ## Table of Contents
 
 - [CSS - Cascading Style Sheets](#css---cascading-style-sheets)
- - [Introduction](#introduction)
- - [What is Sass?](#what-is-sass)
-   - [What a CSS preprocessor is?](#what-a-css-preprocessor-is)
-   - [What is Sass?](#what-is-sass-1)
-   - [Difference between Sass and Scss](#difference-between-sass-and-scss)
-   - [How does Sass actually work?](#how-does-sass-actually-work)
-   - [Why should you use Sass?](#why-should-you-use-sass)
- - [Feature of Sass](#feature-of-sass)
- - [Variables in Sass](#variables-in-sass)
- - [Nesting in Sass](#nesting-in-sass)
- - [Parent Selector - `&`](#parent-selector---)
- - [Mixin and Include](#mixin-and-include)
- - [Import and Partials](#import-and-partials)
- - [Extend and Inheritance](#extend-and-inheritance)
- - [How to use Conditional statement in SCSS](#how-to-use-conditional-statement-in-scss)
- - [Function and operators](#function-and-operators)
-   - [Built-in functions](#built-in-functions)
-   - [User-defined functions](#user-defined-functions)
- - [How to Set Up Sass for Local Development](#how-to-set-up-sass-for-local-development)
-   - [VS Code](#vs-code)
-   - [For Mac OS X or Linux:](#for-mac-os-x-or-linux)
- - [Tips for using Sass](#tips-for-using-sass)
+  - [1.1. CSS Units](#1.1. CSS Units)
+  - [1.2 CSS Naming Methodologies](#1.2 CSS Naming Methodologies)
+    - [BEM (Block Element Modifier)](#BEM (Block Element Modifier))
+    - [Traditional CSS V.S. BEM CSS](#Traditional CSS V.S. BEM CSS)
+    - [BEM Naming Convention](#BEM Naming Convention)
+    - [BEM Naming Rules](#BEM Naming Rules)
+
+  - [1.3 Responsive Design Using Media Queries](#1.3 Responsive Design Using Media Queries)
+    - [Basic Media Query Syntax](#Basic Media Query Syntax)
+    - [Common Breakpoints Example](#Common Breakpoints Example)
+    - [Key Concepts](#Key Concepts)
+      - [1.Mobile-First vs Desktop-First](#1. Mobile-First vs Desktop-First)
+      - [2. Common Breakpoints](#2. Common Breakpoints)
+      - [3. Important Rules](#3. Important Rules)
+
+    - [Interactive Example: Responsive Card Layout](#Interactive Example: Responsive Card Layout)
+
+  - [1.4 Position](#1.4 Position)
+    - [Position Examples](#Position Examples)
+      - [Example 1: Relative vs Absolute Positioning](#Example 1: Relative vs Absolute Positioning)
+      - [Example 2: Sticky Navigation](#Example 2: Sticky Navigation)
+      - [Example 3: Fixed Modal Overlay](#Example 3: Fixed Modal Overlay)
+
+  - [1.5 Transition](#1.5 Transition)
+    - [Example 1: Transition on Hover](#Example 1: Transition on Hover)
+    - [Example 2: Transition on Click (Use JavaScript to add or remove classes)](#Example 2: Transition on Click (Use JavaScript to add or remove classes))
+
+  - [1.6 z-index](#1.6 z-index)
+    - [Basic Example](#Basic Example)
+    - [Stacking Context Example](#Stacking Context Example)
+    - [Modal Overlay Example](#Modal Overlay Example)
+    - [Key Points About z-index](#Key Points About z-index)
+
+  - [1.7 Grid](#1.7 Grid)
+    - [Flex (One-dimensional)](#Flex (One-dimensional))
+    - [Grid (Two-dimensional)](#Grid (Two-dimensional))
+    - [Grid vs. Flexbox Comparison](#Grid vs. Flexbox Comparison)
+    - [Real-World Usage Pattern](#Real-World Usage Pattern)
+    - [Why Grid is Powerful Yet Flexbox is Used More Often](#Why Grid is Powerful Yet Flexbox is Used More Often)
+
+- [2. Sass](#2. Sass)
+  - [2.1 Sass Introduction](#2.1 Sass Introduction)
+    - [What a CSS preprocessor is?](#What a CSS preprocessor is?)
+    - [What is Sass?](#What is Sass?)
+    - [Difference between Sass and Scss](#Difference between Sass and Scss)
+    - [How does Sass actually work?](#How does Sass actually work?)
+    - [Why should you use Sass?](#Why should you use Sass?)
+
+  - [2.2 Feature of Sass](#2.2 Feature of Sass)
+    - [Variables in Sass](#Variables in Sass)
+    - [Nesting in Sass](#Nesting in Sass)
+    - [Parent Selector - `&`](#Parent Selector - `&`)
+    - [Mixin and Include](#Mixin and Include)
+    - [Import and Partials](#Import and Partials)
+    - [Extend and Inheritance](#Extend and Inheritance)
+    - [How to use Conditional statement in SCSS](#How to use Conditional statement in SCSS)
+    - [Function and operators](#Function and operators)
+
+  - [2.3 How to Set Up Sass for Local Development](#2.3 How to Set Up Sass for Local Development)
+    - [VS Code](#VS Code)
+    - [For Mac OS X or Linux](#For Mac OS X or Linux)
+
+  - [2.4 Tips for using Sass](#2.4 Tips for using Sass)
+
+
+
+
+---
+
+
 
 ##  1. Cascading Style Sheets (CSS)
 
@@ -189,8 +237,7 @@ Codepen Sandbox - [link](https://codepen.io/shenghongzhong/pen/ogvoQZW)
   Example-with-BEM</a> by Shenghongzhong (<a href="https://codepen.io/shenghongzhong">@shenghongzhong</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
-
-**BEM Naming Convention**
+##### **BEM Naming Convention**
 
 - Block: Standalone component that is meaningful on its own (e.g., `header`, `menu`, `button`)
 - Element: Parts of a block that have no standalone meaning (`__`) (e.g., `menu__item`, `header__title`)
@@ -210,7 +257,8 @@ Example
 .card__title--large { }
 ```
 
-**Naming Rules:**
+##### **BEM Naming Rules:**
+
 - `-` Hyphen: Used for word separation in long names (e.g., `block-name`)
 - `__` Double underscore: Connects element to block (e.g., `block__element`)
 - `--` Double hyphen: Indicates modifier (e.g., `block--modifier`)
@@ -262,39 +310,42 @@ Media queries are a fundamental CSS feature that allows us to create responsive 
 - `print`: For printers and print preview
 - `speech`: For screen readers
 
-#### Key Concepts:
-1. **Mobile-First vs Desktop-First**
-   ```css
-   /* Mobile-First approach using min-width */
-   .element { 
-       /* Mobile styles by default */
-       width: 100%;
-   }
-   
-   @media (min-width: 768px) {
-       /* Tablet styles */
-       .element {
-           width: 50%;
-       }
-   }
-   
-   @media (min-width: 1024px) {
-       /* Desktop styles */
-       .element {
-           width: 33.33%;
-       }
-   }
-   ```
+#### Key Concepts
+##### 1. **Mobile-First vs Desktop-First**
 
-2. **Common Breakpoints**
-   - Mobile: < 768px
-   - Tablet: 768px - 1024px
-   - Desktop: > 1024px
+```css
+/* Mobile-First approach using min-width */
+.element { 
+    /* Mobile styles by default */
+    width: 100%;
+}
 
-3. **Important Rules**:
-   - Order matters: Place media queries in order from most general to most specific
-   - Avoid overlapping ranges to prevent style conflicts
-   - Test across different devices and orientations
+@media (min-width: 768px) {
+    /* Tablet styles */
+    .element {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Desktop styles */
+    .element {
+        width: 33.33%;
+    }
+}
+```
+
+##### 2. **Common Breakpoints**
+
+- Mobile: < 768px
+- Tablet: 768px - 1024px
+- Desktop: > 1024px
+
+##### 3. **Important Rules**
+
+- Order matters: Place media queries in order from most general to most specific
+- Avoid overlapping ranges to prevent style conflicts
+- Test across different devices and orientations
 
 
 #### Interactive Example: Responsive Card Layout
@@ -402,7 +453,7 @@ Codepen sandbox - [link](https://codepen.io/shenghongzhong/pen/YPKERrY)
 
 
 
-##### Example 2: Sticky Navigation
+###### Example 2: Sticky Navigation
 A common use case for sticky positioning - a navigation bar that sticks to the top when scrolling:
 
 codepen sandbox - [link](https://codepen.io/shenghongzhong/pen/QwLOJqR)
@@ -412,7 +463,7 @@ codepen sandbox - [link](https://codepen.io/shenghongzhong/pen/QwLOJqR)
   Example-sticky-navigation</a> by Shenghongzhong (<a href="https://codepen.io/shenghongzhong">@shenghongzhong</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
-
+###### 
 
 
 ##### Example 3: Fixed Modal Overlay
@@ -438,7 +489,7 @@ Codepen sandbox - [link](https://codepen.io/shenghongzhong/pen/ZYzamaG)
 
 
 
-### 1.5 Transition:
+### 1.5 Transition
 
 In CSS, transition is a property that allows you to control the smoothness of changes in property values over time. It makes changes in property values appear gradually, rather than abruptly.
 
@@ -484,8 +535,9 @@ Codepen box - [link](https://codepen.io/shenghongzhong/pen/yyBPQpL)
   Example-transition</a> by Shenghongzhong (<a href="https://codepen.io/shenghongzhong">@shenghongzhong</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
-
 Note: Transitions can be triggered not only through pseudo-classes like `:hover`, but also by using JavaScript to add or remove classes, giving you programmatic control over when transitions take effect.
+
+
 
 ##### Example 2: Transition on Click (Use JavaScript to add or remove classes)
 
@@ -513,7 +565,9 @@ Codepen box - [link](https://codepen.io/shenghongzhong/pen/ByBmGJG)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
+
 #### Stacking Context Example
+
 A stacking context is created when certain properties are used. Here's an example showing how z-index behaves within different stacking contexts:
 
 codepen box - [link](https://codepen.io/shenghongzhong/pen/MYgOzQY)
@@ -523,8 +577,10 @@ codepen box - [link](https://codepen.io/shenghongzhong/pen/MYgOzQY)
   example-z-index-stacking-content</a> by Shenghongzhong (<a href="https://codepen.io/shenghongzhong">@shenghongzhong</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+#### 
 
 #### Modal Overlay Example
+
 A practical use case for z-index with a modal overlay:
 
 codepen box - [link](https://codepen.io/shenghongzhong/pen/ogvoQEG)
@@ -534,8 +590,9 @@ codepen box - [link](https://codepen.io/shenghongzhong/pen/ogvoQEG)
   Example-z-index-Modal Overlay</a> by Shenghongzhong (<a href="https://codepen.io/shenghongzhong">@shenghongzhong</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+#### 
 
-#### Key Points About z-index:
+#### Key Points About z-index
 
 1. **Only works on positioned elements**: Elements must have a position value other than `static`
 2. **Creates stacking context**: Some CSS properties create a new stacking context:
@@ -562,7 +619,7 @@ codepen box - [link](https://codepen.io/shenghongzhong/pen/ogvoQEG)
 
 css grid is very powerful. In practice, flex is used more than grid
 
-**Flex (One-dimensional):**
+**Flex (One-dimensional)**
 
 \- Works along a single axis (either row OR column) at a time
 
@@ -584,7 +641,9 @@ css grid is very powerful. In practice, flex is used more than grid
 }
 ```
 
-**Grid (Two-dimensional):**
+
+
+**Grid (Two-dimensional)**
 
 \- Works with rows AND columns simultaneously
 
@@ -654,7 +713,7 @@ css grid is very powerful. In practice, flex is used more than grid
 }
 ```
 
-#### Real-World Usage Pattern:
+#### Real-World Usage Pattern
 Most modern websites use a combination of both:
 ```css
 /* Page structure with Grid */
@@ -675,7 +734,7 @@ Most modern websites use a combination of both:
 }
 ```
 
-#### Why Grid is Powerful Yet Flexbox is Used More Often:
+#### Why Grid is Powerful Yet Flexbox is Used More Often
 
 1. **Learning Curve**
    - Flexbox: Simpler to learn and implement
@@ -755,6 +814,8 @@ Some flex properties can also be used in CSS Grid, such as justify-content
 
 
 
+
+### 
 
 -----
 
@@ -862,7 +923,7 @@ HTML cannot deal with Scss or Sass file, therefore you woould only write `.scss`
 
 
 
-### Feature of Sass
+### 2.2 Feature of Sass
 
 Sass has 5 features:
 
@@ -872,7 +933,7 @@ Sass has 5 features:
 4. Partials
 5. Extent/Inheritance
 
-### 2.2 Variables in Sass
+### Variables in Sass
 
 I was surpirsed to see some features of Sass but also understand why it is necessary after writing some messy CSS code. 
 
@@ -912,7 +973,7 @@ Then you can't use the variable `--stop` for `p` in `.scss`
 
 
 
-### 2.3 Nesting in Sass
+### Nesting in Sass
 
 I don't know about you but I often felt vomiting while writing CSS as there are often duplicated CSS rules. Therefore, Sass comes in use and lets you nest CSS selectors in the same way as HTML.
 
@@ -962,7 +1023,7 @@ nav {
 
 
 
-### 2.4 Parent Selector - `&`
+### Parent Selector - `&`
 
 In the Sass code above, you might notice the ampersand symbol `&` used with the hover pseudo-class. This is called a Parent Selector.
 
@@ -980,7 +1041,7 @@ How do you implement Sass with BEM naming practice?
 
 
 
-### 2.5 Mixin and Include
+### Mixin and Include
 
 Use the directive `@mixin`  to create reusable code (blocks).  
 Use the directive `@include`  to use what the reusable code (blocks) is previously created by `@mixin`.
@@ -1016,7 +1077,7 @@ div {
 
 
 
-### 2.6 Import and Partials
+### Import and Partials
 
 Partials help you organise and structure your CSS code. As stylesheets grow large over time, it gets difficult to maintain them.  it just makes sense to break your stylesheets into smaller chunks. 
 
@@ -1045,7 +1106,7 @@ Note:
 
 
 
-### 2.5 Extend and Inheritance
+### Extend and Inheritance
 
 Sass has a few ways to help achive this goal of the DRY principle. One of the ways of doing this is to create a placeholder that can be extended with `@extend` . You can use the placeholder variable, the percentage  `%` symbol, to create a selector that you only want to extend. Extending means giving a css class the attributes of the extended class. This way we don’t have to write the same code over and over.
 
@@ -1116,7 +1177,7 @@ In the complied CSS, `.button` and `.success-button` will both include the style
 
 
 
-### 2.7. How to use Conditional statement in SCSS
+### How to use Conditional statement in SCSS
 
 
 
@@ -1132,7 +1193,7 @@ In the complied CSS, `.button` and `.success-button` will both include the style
 
 
 
-### 2.8 Function and operators
+### Function and operators
 
 Prior to Sass, you couldn’t perform any math in a CSS file. Operators in Sass change this by giving you the ability to do math with your attributes.
 
@@ -1226,7 +1287,7 @@ Example
 
 
 
-### How to Set Up Sass for Local Development
+### 2.3 How to Set Up Sass for Local Development
 
 
 
@@ -1239,9 +1300,9 @@ You have some options to compile Sass files to `.css` files
 
 
 
-##### VS Code
+#### VS Code
 
-###### Step 1: Install Live Sass Compiler
+##### Step 1: Install Live Sass Compiler
 
 First, launch Visual Studio Code. Once it's loaded, go to the side panel on the left and select the extensions tab.
 
@@ -1261,7 +1322,7 @@ In the search bar, search for "Live Sass Compiler" and install it. This extensio
 
 
 
-###### Step 2: Set the Save Location
+##### Step 2: Set the Save Location
 
 Now change the file path so that Sass gets compiled into the `styles` folder. To do this, you will make changes to the `settings.json` file. In VS Code, go to File > Preferences > Settings. Now search for `live sass compile` to change the global settings.
 
@@ -1309,7 +1370,7 @@ Change `"savePath": "/"` to `"savePath": "/styles"`, so it now looks like this:
   ],
 ```
 
-###### Step 3: Compile Sass
+##### Step 3: Compile Sass
 
 
 
@@ -1343,7 +1404,7 @@ Then, link the CSS file in your `index.html`. In our case:
 
 
 
-##### For Mac OS X or Linux:
+#### For Mac OS X or Linux
 
 You will need [the Homebrew package manager](https://brew.sh/) and you can install Dart Sass by running
 
@@ -1381,7 +1442,7 @@ sass ./styles/index.scss ./styles/index.css -w
 
 
 
-### Tips for using Sass
+### 2.4 Tips for using Sass
 
 That was the complete introduction and installation process of Sass,as we have been focusing on Sass features like Nested Rules, Helper functions, Inheritance, Mixins, Partials, *etc*. 
 
