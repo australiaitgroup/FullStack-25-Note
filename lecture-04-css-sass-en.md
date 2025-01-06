@@ -22,17 +22,17 @@
       - [2. Common Breakpoints](#2.-Common-Breakpoints)
       - [3. Important Rules](#3.-Important-Rules)
 
-    - [Interactive Example: Responsive Card Layout](#Interactive-Example:-Responsive-Card-Layout)
+    - [Interactive Example: Responsive Card Layout](#Interactive-Example-Responsive-Card-Layout)
 
   - [1.4 Position](#1.4-Position)
     - [Position Examples](#Position-Examples)
-      - [Example 1: Relative vs Absolute Positioning](#Example-1:-Relative-vs-Absolute-Positioning)
-      - [Example 2: Sticky Navigation](#Example-2:-Sticky-Navigation)
-      - [Example 3: Fixed Modal Overlay](#Example-3:-Fixed-Modal-Overlay)
+      - [Example 1: Relative vs Absolute Positioning](#Example-1--Relative-vs-Absolute-Positioning)
+      - [Example 2: Sticky Navigation](#Example-2--Sticky-Navigation)
+      - [Example 3: Fixed Modal Overlay](#Example-3--Fixed-Modal-Overlay)
 
   - [1.5 Transition](#1.5-Transition)
     - [Example 1: Transition on Hover](#Example-1:-Transition-on-Hover)
-    - [Example 2: Transition on Click (Use JavaScript to add or remove classes)](#Example-2:-Transition-on-Click-(Use-JavaScript-to-add-or-remove-classes))
+    - [Example 2: Transition on Click (Use JavaScript to add or remove classes)](#Example-2:-Transition-on-Click-Use-JavaScript-to-add-or-remove-classes)
 
   - [1.6 z-index](#1.6-z-index)
     - [Basic Example](#Basic-Example)
@@ -195,7 +195,7 @@ Codepen Sandbox - [link](https://codepen.io/alice-tang/pen/vYpJxqy)
 
 ### 1.2 CSS Naming Methodologies
 
-##### BEM (Block Element Modifier)
+##### BEM-Block Element Modifier
 
 **What is BEM?**
 BEM is a popular CSS naming methodology developed by Yandex in 2009. It provides a modular approach to web development by breaking down interfaces into reusable components. The name BEM stands for Block, Element, Modifier – the three core entities that form the foundation of this methodology.
@@ -348,7 +348,7 @@ Media queries are a fundamental CSS feature that allows us to create responsive 
 - Test across different devices and orientations
 
 
-#### Interactive Example: Responsive Card Layout
+#### Interactive Example-Responsive Card Layout
 
 Here's a practical example you can try in your browser that demonstrates both mobile-first and responsive design principles:
 
@@ -438,7 +438,7 @@ The `position` property controls how elements are positioned:
 
 ##### Position Examples
 
-###### Example 1: Relative vs Absolute Positioning
+###### Example 1- Relative vs Absolute Positioning
 This example demonstrates the relationship between relative and absolute positioning:
 
 Codepen sandbox - [link](https://codepen.io/shenghongzhong/pen/YPKERrY)
@@ -453,7 +453,7 @@ Codepen sandbox - [link](https://codepen.io/shenghongzhong/pen/YPKERrY)
 
 
 
-###### Example 2: Sticky Navigation
+###### Example 2- Sticky Navigation
 A common use case for sticky positioning - a navigation bar that sticks to the top when scrolling:
 
 codepen sandbox - [link](https://codepen.io/shenghongzhong/pen/QwLOJqR)
@@ -463,10 +463,10 @@ codepen sandbox - [link](https://codepen.io/shenghongzhong/pen/QwLOJqR)
   Example-sticky-navigation</a> by Shenghongzhong (<a href="https://codepen.io/shenghongzhong">@shenghongzhong</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
-###### 
 
 
-##### Example 3: Fixed Modal Overlay
+
+###### Example 3- Fixed Modal Overlay
 Demonstrates how to create a modal that stays fixed regardless of scrolling:
 
 Codepen sandbox - [link](https://codepen.io/shenghongzhong/pen/ZYzamaG)
@@ -478,7 +478,7 @@ Codepen sandbox - [link](https://codepen.io/shenghongzhong/pen/ZYzamaG)
 </iframe>
 
 
-##### Key Takeaways:
+##### Key Takeaways
 1. Use `relative` positioning when you want to adjust an element's position while maintaining its space in the document flow
 2. Use `absolute` positioning with a `relative` parent for precise control over element placement
 3. Use `sticky` for elements that should stick to a position during scroll
@@ -526,7 +526,7 @@ Example
 
 
 
-##### Example 1: Transition on Hover
+##### Example 1- Transition on Hover
 
 Codepen box - [link](https://codepen.io/shenghongzhong/pen/yyBPQpL)
 
@@ -539,7 +539,7 @@ Note: Transitions can be triggered not only through pseudo-classes like `:hover`
 
 
 
-##### Example 2: Transition on Click (Use JavaScript to add or remove classes)
+##### Example 2- Transition on Click -Use JavaScript to add or remove classes
 
 Codepen box - [link](https://codepen.io/shenghongzhong/pen/JoPOeMW)
 
