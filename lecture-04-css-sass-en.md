@@ -14,7 +14,7 @@
     - [BEM Naming Convention](#BEM-Naming-Convention)
     - [BEM Naming Rules](#BEM-Naming-Rules)
 
-  - [1.3 Responsive Design Using Media Queries](#1.3-Responsive Design Using Media Queries)
+  - [1.3 Responsive Design Using Media Queries](#1.3-Responsive-Design-Using-Media-Queries)
     - [Basic Media Query Syntax](#Basic-Media-Query-Syntax)
     - [Common Breakpoints Example](#Common-Breakpoints-Example)
     - [Key Concepts](#Key-Concepts)
@@ -26,9 +26,9 @@
 
   - [1.4 Position](#1.4-Position)
     - [Position Examples](#Position-Examples)
-      - [Example 1: Relative vs Absolute Positioning](#Example 1:-Relative-vs-Absolute-Positioning)
+      - [Example 1: Relative vs Absolute Positioning](#Example-1:-Relative-vs-Absolute-Positioning)
       - [Example 2: Sticky Navigation](#Example-2:-Sticky-Navigation)
-      - [Example 3: Fixed Modal Overlay](#Example 3:-Fixed-Modal-Overlay)
+      - [Example 3: Fixed Modal Overlay](#Example-3:-Fixed-Modal-Overlay)
 
   - [1.5 Transition](#1.5-Transition)
     - [Example 1: Transition on Hover](#Example-1:-Transition-on-Hover)
