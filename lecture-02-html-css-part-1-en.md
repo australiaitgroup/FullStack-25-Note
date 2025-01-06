@@ -10,6 +10,45 @@
 
 [TOC]
 
+### TOC
+
+- [[#HTML - Hypertext Markup Language|HTML - Hypertext Markup Language]]
+  - [[#HTML - Hypertext Markup Language#1. Introduction|1. Introduction]]
+  - [[#HTML - Hypertext Markup Language#HTML, CSS and JavaScript|HTML, CSS and JavaScript]]
+  - [[#HTML - Hypertext Markup Language#IDE (**Integrated Development Environment**)|IDE (**Integrated Development Environment**)]]
+  - [[#HTML - Hypertext Markup Language#2. HTML Basic Structure and Elements|2. HTML Basic Structure and Elements]]
+    - [[#2. HTML Basic Structure and Elements#2.1. HTML Basic Structure|2.1. HTML Basic Structure]]
+    - [[#2. HTML Basic Structure and Elements#2.2 HTML Elements|2.2 HTML Elements]]
+      - [[#2.2 HTML Elements#HTML Tags|HTML Tags]]
+      - [[#2.2 HTML Elements#All HTML Elements Can Have Attributes|All HTML Elements Can Have Attributes]]
+      - [[#2.2 HTML Elements#- HTML tag: `<head>`|- HTML tag: `<head>`]]
+      - [[#2.2 HTML Elements#-  HTML tag: `<meta>`|-  HTML tag: `<meta>`]]
+      - [[#2.2 HTML Elements#Common Meta Tags|Common Meta Tags]]
+      - [[#2.2 HTML Elements#Platform-Specific Meta Tags|Platform-Specific Meta Tags]]
+      - [[#2.2 HTML Elements#- HTML tag: `<title>`|- HTML tag: `<title>`]]
+      - [[#2.2 HTML Elements#- HTML tag: `<body>`|- HTML tag: `<body>`]]
+      - [[#2.2 HTML Elements#Other Examples with common tags|Other Examples with common tags]]
+    - [[#2. HTML Basic Structure and Elements#2.3 Sematic HTML Tags|2.3 Sematic HTML Tags]]
+      - [[#2.3 Sematic HTML Tags#What is it?|What is it?]]
+  - [[#HTML - Hypertext Markup Language#3. Comments and HTML Character Entities|3. Comments and HTML Character Entities]]
+    - [[#3. Comments and HTML Character Entities#3.1 Comments|3.1 Comments]]
+    - [[#3. Comments and HTML Character Entities#3.2 HTML Character Entities|3.2 HTML Character Entities]]
+  - [[#HTML - Hypertext Markup Language#4. Lists|4. Lists]]
+    - [[#4. Lists#4.1 ul (unordered list)|4.1 ul (unordered list)]]
+    - [[#4. Lists#4.2. ol (ordered list)|4.2. ol (ordered list)]]
+    - [[#4. Lists#4.3 dl (Description list)|4.3 dl (Description list)]]
+  - [[#HTML - Hypertext Markup Language#5. Table in HTML|5. Table in HTML]]
+    - [[#5. Table in HTML#`table`, `tr` and `td` Tags|`table`, `tr` and `td` Tags]]
+  - [[#HTML - Hypertext Markup Language#6. HTML Form and input tags|6. HTML Form and input tags]]
+    	- [[#`table`, `tr` and `td` Tags#Form Action and Submission|Form Action and Submission]]
+    	- [[#`table`, `tr` and `td` Tags#Common form attributes|Common form attributes]]
+    	- [[#`table`, `tr` and `td` Tags#HTML Form and Input types|HTML Form and Input types]]
+    	- [[#`table`, `tr` and `td` Tags#Another example|Another example]]
+    	- [[#`table`, `tr` and `td` Tags#To enhance User Experience|To enhance User Experience]]
+    	- [[#`table`, `tr` and `td` Tags#Common HTML Elements to work with HTML form:|Common HTML Elements to work with HTML form:]]
+    	- [[#`table`, `tr` and `td` Tags#HTML Form Submission|HTML Form Submission]]
+- [[#Footnotes|Footnotes]]
+
 
 
 ### HTML - Hypertext Markup Language
