@@ -6,77 +6,51 @@
 
 ## TOC
 
-[TOC]
-
-[[#CSS - Cascading Style Sheets|CSS - Cascading Style Sheets]]
-
-	- [[#CSS - Cascading Style Sheets#Introduction|Introduction]]
-		- [[#Introduction#What does CSS do?|What does CSS do?]]
-		- [[#Introduction#Emmet|Emmet]]
-		- [[#Introduction#How Emmet Works:|How Emmet Works:]]
-		- [[#Introduction#How to Add CSS into HTML|How to Add CSS into HTML]]
-		- [[#Introduction#Inline CSS|Inline CSS]]
-			- [[#Inline CSS#Internal CSS|Internal CSS]]
-			- [[#Inline CSS#External CSS|External CSS]]
-	- [[#CSS - Cascading Style Sheets#CSS Selectors|CSS Selectors]]
-		- [[#CSS Selectors#Tag Name (element selector)|Tag Name (element selector)]]
-		- [[#CSS Selectors#Class Selector|Class Selector]]
-		- [[#CSS Selectors#ID Selector|ID Selector]]
-		- [[#CSS Selectors#Advanced CSS Selectors|Advanced CSS Selectors]]
-			- [[#Advanced CSS Selectors#Wildcard Selector|Wildcard Selector]]
-			- [[#Advanced CSS Selectors#Group Selector|Group Selector]]
-			- [[#Advanced CSS Selectors#Attribute Selector|Attribute Selector]]
-			- [[#Advanced CSS Selectors#Descendant Selector|Descendant Selector]]
-			- [[#Advanced CSS Selectors#Child Selector|Child Selector]]
-			- [[#Advanced CSS Selectors#General Sibling Selector|General Sibling Selector]]
-			- [[#Advanced CSS Selectors#Adjacent Sibling Selector|Adjacent Sibling Selector]]
-			- [[#Advanced CSS Selectors#Combined/Compound Selector|Combined/Compound Selector]]
-		- [[#CSS Selectors#Pseudo-class Selectors for Links|Pseudo-class Selectors for Links]]
-		- [[#CSS Selectors#Structural Pseudo-class Selectors|Structural Pseudo-class Selectors]]
-	- [[#CSS - Cascading Style Sheets#CSS Font and Text Properties|CSS Font and Text Properties]]
-		- [[#CSS Font and Text Properties#Font Properties|Font Properties]]
-		- [[#CSS Font and Text Properties#Text Properties|Text Properties]]
-	- [[#CSS - Cascading Style Sheets#Display Properties: Understanding Block, Inline, and Inline-Block 📦|Display Properties: Understanding Block, Inline, and Inline-Block 📦]]
-		- [[#Display Properties: Understanding Block, Inline, and Inline-Block 📦#1. Block Elements (`display: block;`) 📦|1. Block Elements (`display: block;`) 📦]]
-		- [[#Display Properties: Understanding Block, Inline, and Inline-Block 📦#2. Inline Elements (`display: inline;`) 📝|2. Inline Elements (`display: inline;`) 📝]]
-		- [[#Display Properties: Understanding Block, Inline, and Inline-Block 📦#3. Inline-Block Elements (`display: inline-block;`) 🎁|3. Inline-Block Elements (`display: inline-block;`) 🎁]]
-		- [[#Display Properties: Understanding Block, Inline, and Inline-Block 📦#Visual Example:|Visual Example:]]
-		- [[#Display Properties: Understanding Block, Inline, and Inline-Block 📦#Common Use Cases:|Common Use Cases:]]
-	- [[#CSS - Cascading Style Sheets#CSS Background Properties: Making Beautiful Backgrounds 🎨|CSS Background Properties: Making Beautiful Backgrounds 🎨]]
-		- [[#CSS Background Properties: Making Beautiful Backgrounds 🎨#1. Background Color|1. Background Color]]
-		- [[#CSS Background Properties: Making Beautiful Backgrounds 🎨#2. Background Image 🖼️|2. Background Image 🖼️]]
-		- [[#CSS Background Properties: Making Beautiful Backgrounds 🎨#3. Background Repeat 🔁|3. Background Repeat 🔁]]
-		- [[#CSS Background Properties: Making Beautiful Backgrounds 🎨#4. Background Position 📍|4. Background Position 📍]]
-		- [[#CSS Background Properties: Making Beautiful Backgrounds 🎨#5. Shorthand Property (All-in-One!) ✨|5. Shorthand Property (All-in-One!) ✨]]
-		- [[#CSS Background Properties: Making Beautiful Backgrounds 🎨#Common Use Cases 🎯|Common Use Cases 🎯]]
-	- [[#CSS - Cascading Style Sheets#The Three Core Concepts of CSS: Cascading, Inheritance, and Specificity 🎯|The Three Core Concepts of CSS: Cascading, Inheritance, and Specificity 🎯]]
-		- [[#The Three Core Concepts of CSS: Cascading, Inheritance, and Specificity 🎯#1. Cascading Nature of CSS|1. Cascading Nature of CSS]]
-		- [[#The Three Core Concepts of CSS: Cascading, Inheritance, and Specificity 🎯#2. CSS Inheritance 👨‍👧‍👦 - The Family Tree of Styles|2. CSS Inheritance 👨‍👧‍👦 - The Family Tree of Styles]]
-		- [[#The Three Core Concepts of CSS: Cascading, Inheritance, and Specificity 🎯#3. Specificity (Priority Rules) 🏆|3. Specificity (Priority Rules) 🏆]]
-		- [[#The Three Core Concepts of CSS: Cascading, Inheritance, and Specificity 🎯#Real-World Battle Example 🥊|Real-World Battle Example 🥊]]
-	- [[#CSS - Cascading Style Sheets#The CSS Box Model: Building Blocks of Web Layout 📦|The CSS Box Model: Building Blocks of Web Layout 📦]]
-		- [[#The CSS Box Model: Building Blocks of Web Layout 📦#The Box Model Layers (from inside out) 🎁|The Box Model Layers (from inside out) 🎁]]
-		- [[#The CSS Box Model: Building Blocks of Web Layout 📦#Padding|Padding]]
-		- [[#The CSS Box Model: Building Blocks of Web Layout 📦#Shorthand Magic: Different Ways to Write It ✨|Shorthand Magic: Different Ways to Write It ✨]]
-		- [[#The CSS Box Model: Building Blocks of Web Layout 📦#border|border]]
-			- [[#border#Shorthand: The All-in-One Solution ✨|Shorthand: The All-in-One Solution ✨]]
-			- [[#border#Border Styles Gallery 🖼️|Border Styles Gallery 🖼️]]
-			- [[#border#Individual Side Control 🎮|Individual Side Control 🎮]]
-		- [[#The CSS Box Model: Building Blocks of Web Layout 📦#Margin|Margin]]
-			- [[#Margin#Centering Elements & Common Margin Challenges 🎯|Centering Elements & Common Margin Challenges 🎯]]
-	- [[#CSS - Cascading Style Sheets#CSS flexbox|CSS flexbox]]
-		- [[#CSS flexbox#What is flexbox?|What is flexbox?]]
-			- [[#What is flexbox?#How to use flexbox?|How to use flexbox?]]
-		- [[#CSS flexbox#Flexbox - two axes : Main and Cross|Flexbox - two axes : Main and Cross]]
-		- [[#CSS flexbox#Flex Direction: Changing the Flow 🔄|Flex Direction: Changing the Flow 🔄]]
-		- [[#CSS flexbox#Justify-Content: Arranging Items Along the Main Axis|Justify-Content: Arranging Items Along the Main Axis]]
-			- [[#Justify-Content: Arranging Items Along the Main Axis#1. Basic Alignment|1. Basic Alignment]]
-			- [[#Justify-Content: Arranging Items Along the Main Axis#Visual Guide to Each Value|Visual Guide to Each Value]]
-		- [[#CSS flexbox#Align-Items: Cross Axis Alignment Magic|Align-Items: Cross Axis Alignment Magic]]
-	- [[#CSS - Cascading Style Sheets#Understanding Flex Item Growth and Shrink 📏|Understanding Flex Item Growth and Shrink 📏]]
-		- [[#Understanding Flex Item Growth and Shrink 📏#Flex Growth and Shrinking Properties|Flex Growth and Shrinking Properties]]
-		- [[#Understanding Flex Item Growth and Shrink 📏#Shorthand Property ✨|Shorthand Property ✨]]
-		- [[#Understanding Flex Item Growth and Shrink 📏#Real World Examples 🌟|Real World Examples 🌟]]
+- [CSS - Cascading Style Sheets](#css---cascading-style-sheets)
+ - [Introduction](#introduction)
+   - [What does CSS do?](#what-does-css-do)
+   - [Emmet](#emmet)
+   - [How to Add CSS into HTML](#how-to-add-css-into-html)
+     - [Inline CSS](#inline-css)
+     - [Internal CSS](#internal-css)
+     - [External CSS](#external-css)
+ - [CSS Selectors](#css-selectors)
+   - [Tag Name (element selector)](#tag-name-element-selector)
+   - [Class Selector](#class-selector)
+   - [ID Selector](#id-selector)
+   - [Advanced CSS Selectors](#advanced-css-selectors)
+     - [Wildcard Selector](#wildcard-selector)
+     - [Group Selector](#group-selector) 
+     - [Attribute Selector](#attribute-selector)
+     - [Descendant Selector](#descendant-selector)
+     - [Child Selector](#child-selector)
+     - [General Sibling Selector](#general-sibling-selector)
+     - [Adjacent Sibling Selector](#adjacent-sibling-selector)
+     - [Combined/Compound Selector](#combinedcompound-selector)
+   - [Pseudo-class Selectors for Links](#pseudo-class-selectors-for-links)
+   - [Structural Pseudo-class Selectors](#structural-pseudo-class-selectors)
+ - [CSS Font and Text Properties](#css-font-and-text-properties)
+   - [Font Properties](#font-properties)
+   - [Text Properties](#text-properties)
+ - [Display Properties: Understanding Block, Inline, and Inline-Block](#display-properties-understanding-block-inline-and-inline-block)
+ - [CSS Background Properties: Making Beautiful Backgrounds](#css-background-properties-making-beautiful-backgrounds)
+ - [The Three Core Concepts of CSS: Cascading, Inheritance, and Specificity](#the-three-core-concepts-of-css-cascading-inheritance-and-specificity)
+   - [Cascading Nature of CSS](#cascading-nature-of-css)
+   - [CSS Inheritance](#css-inheritance)
+   - [Specificity (Priority Rules)](#specificity-priority-rules)
+ - [The CSS Box Model: Building Blocks of Web Layout](#the-css-box-model-building-blocks-of-web-layout)
+   - [The Box Model Layers (from inside out)](#the-box-model-layers-from-inside-out)
+   - [Padding](#padding)
+   - [border](#border)
+   - [Margin](#margin)
+ - [CSS flexbox](#css-flexbox)
+   - [What is flexbox?](#what-is-flexbox)
+     - [How to use flexbox?](#how-to-use-flexbox)
+   - [Flexbox - two axes : Main and Cross](#flexbox---two-axes--main-and-cross)
+   - [Flex Direction: Changing the Flow](#flex-direction-changing-the-flow)
+   - [Justify-Content: Arranging Items Along the Main Axis](#justify-content-arranging-items-along-the-main-axis)
+   - [Align-Items: Cross Axis Alignment Magic](#align-items-cross-axis-alignment-magic)
+   - [Understanding Flex Item Growth and Shrink](#understanding-flex-item-growth-and-shrink)
 
 ## CSS - Cascading Style Sheets
 

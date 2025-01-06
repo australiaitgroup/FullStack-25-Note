@@ -2,79 +2,33 @@
 
 > This note is based on the lecture ([link](https://jiangren.com.au/study/lesson?programId=672448ecea33cf003687af93&lessonId=673c41cb0022bb00124fe2ed&tab=content) by Ally Tang. The entire lecture is about CSS (**Cascading Style Sheets**). If doubts, please ask anyone or consult the documentation [W3School](https://www.w3schools.com/html/) and [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML). Happy Coding
 
-##  Table of Contents
 
-[TOC]
 
-- [[#1. Cascading Style Sheets (CSS)|1. Cascading Style Sheets (CSS)]]
-	- [[#1. Cascading Style Sheets (CSS)#1.1. CSS Units|1.1. CSS Units]]
-			- [[#Absolute Length Units|Absolute Length Units]]
-				- [[#Absolute Length Units#**Absolute Length Units:**|**Absolute Length Units:**]]
-			- [[#Relative Length Units|Relative Length Units]]
-				- [[#Relative Length Units#**Relative Length Units:**|**Relative Length Units:**]]
-	- [[#1. Cascading Style Sheets (CSS)#1.2 CSS Naming Methodologies|1.2 CSS Naming Methodologies]]
-			- [[#BEM (Block Element Modifier)|BEM (Block Element Modifier)]]
-			- [[#**Traditional CSS V.S. BEM CSS**|**Traditional CSS V.S. BEM CSS**]]
-				- [[#**Traditional CSS V.S. BEM CSS**#Traditional CSS|Traditional CSS]]
-	- [[#1. Cascading Style Sheets (CSS)#1.3 Responsive Design Using Media Queries|1.3 Responsive Design Using Media Queries]]
-		- [[#1.3 Responsive Design Using Media Queries#Basic Media Query Syntax|Basic Media Query Syntax]]
-		- [[#1.3 Responsive Design Using Media Queries#Common Breakpoints Example|Common Breakpoints Example]]
-		- [[#1.3 Responsive Design Using Media Queries#Common Media Types:|Common Media Types:]]
-		- [[#1.3 Responsive Design Using Media Queries#Key Concepts:|Key Concepts:]]
-		- [[#1.3 Responsive Design Using Media Queries#Interactive Example: Responsive Card Layout|Interactive Example: Responsive Card Layout]]
-			- [[#Interactive Example: Responsive Card Layout#**Traditional CSS**|**Traditional CSS**]]
-			- [[#Interactive Example: Responsive Card Layout#BEM CSS|BEM CSS]]
-	- [[#1. Cascading Style Sheets (CSS)#1.4 Position|1.4 Position]]
-			- [[#Interactive Example: Responsive Card Layout#Position Examples|Position Examples]]
-				- [[#Position Examples#Example 1: Relative vs Absolute Positioning|Example 1: Relative vs Absolute Positioning]]
-			- [[#Interactive Example: Responsive Card Layout#Example 2: Sticky Navigation|Example 2: Sticky Navigation]]
-			- [[#Interactive Example: Responsive Card Layout#Example 3: Fixed Modal Overlay|Example 3: Fixed Modal Overlay]]
-			- [[#Interactive Example: Responsive Card Layout#Key Takeaways:|Key Takeaways:]]
-	- [[#1. Cascading Style Sheets (CSS)#1.5 Transition:|1.5 Transition:]]
-			- [[#Interactive Example: Responsive Card Layout#Example 1: Transition on Hover|Example 1: Transition on Hover]]
-			- [[#Interactive Example: Responsive Card Layout#Example 2: Transition on Click (Use JavaScript to add or remove classes)|Example 2: Transition on Click (Use JavaScript to add or remove classes)]]
-	- [[#1. Cascading Style Sheets (CSS)#1.6 z-index|1.6 z-index]]
-		- [[#1.6 z-index#Basic Example|Basic Example]]
-		- [[#1.6 z-index#Stacking Context Example|Stacking Context Example]]
-		- [[#1.6 z-index#Modal Overlay Example|Modal Overlay Example]]
-		- [[#1.6 z-index#Key Points About z-index:|Key Points About z-index:]]
-		- [[#1.6 z-index#Best Practices:|Best Practices:]]
-	- [[#1. Cascading Style Sheets (CSS)#1.7 Grid|1.7 Grid]]
-		- [[#1.7 Grid#Grid vs. Flexbox Comparison|Grid vs. Flexbox Comparison]]
-			- [[#Grid vs. Flexbox Comparison#When to Use Grid:|When to Use Grid:]]
-			- [[#Grid vs. Flexbox Comparison#When to Use Flexbox:|When to Use Flexbox:]]
-		- [[#1.7 Grid#Real-World Usage Pattern:|Real-World Usage Pattern:]]
-		- [[#1.7 Grid#Why Grid is Powerful Yet Flexbox is Used More Often:|Why Grid is Powerful Yet Flexbox is Used More Often:]]
-- [[#2. Sass|2. Sass]]
-	- [[#2. Sass#2.1 Sass Introduction|2.1 Sass Introduction]]
-		- [[#2.1 Sass Introduction#What a CSS preprocessor is?|What a CSS preprocessor is?]]
-		- [[#2.1 Sass Introduction#What is Sass?|What is Sass?]]
-		- [[#2.1 Sass Introduction#Difference between Sass and Scss|Difference between Sass and Scss]]
-			- [[#Difference between Sass and Scss#Sass|Sass]]
-			- [[#Difference between Sass and Scss#Scss|Scss]]
-		- [[#2.1 Sass Introduction#How does Sass actually work?|How does Sass actually work?]]
-		- [[#2.1 Sass Introduction#Why should you use Sass?|Why should you use Sass?]]
-	- [[#2. Sass#Feature of Sass|Feature of Sass]]
-	- [[#2. Sass#2.2 Variables in Sass|2.2 Variables in Sass]]
-	- [[#2. Sass#2.3 Nesting in Sass|2.3 Nesting in Sass]]
-	- [[#2. Sass#2.4 Parent Selector - `&`|2.4 Parent Selector - `&`]]
-	- [[#2. Sass#2.5 Mixin and Include|2.5 Mixin and Include]]
-	- [[#2. Sass#2.6 Import and Partials|2.6 Import and Partials]]
-	- [[#2. Sass#2.5 Extend and Inheritance|2.5 Extend and Inheritance]]
-	- [[#2. Sass#2.7. How to use Conditional statement in SCSS|2.7. How to use Conditional statement in SCSS]]
-	- [[#2. Sass#2.8 Function and operators|2.8 Function and operators]]
-		- [[#2.8 Function and operators#Built-in functions|Built-in functions]]
-		- [[#2.8 Function and operators#User-defined functions|User-defined functions]]
-	- [[#2. Sass#How to Set Up Sass for Local Development|How to Set Up Sass for Local Development]]
-			- [[#User-defined functions#VS Code|VS Code]]
-				- [[#VS Code#Step 1: Install Live Sass Compiler|Step 1: Install Live Sass Compiler]]
-				- [[#VS Code#Step 2: Set the Save Location|Step 2: Set the Save Location]]
-				- [[#VS Code#Step 3: Compile Sass|Step 3: Compile Sass]]
-				- [[#VS Code#Step 4: Link the CSS file|Step 4: Link the CSS file]]
-			- [[#User-defined functions#For Mac OS X or Linux:|For Mac OS X or Linux:]]
-	- [[#2. Sass#Tips for using Sass|Tips for using Sass]]
-	
-	
+## Table of Contents
+
+- [CSS - Cascading Style Sheets](#css---cascading-style-sheets)
+ - [Introduction](#introduction)
+ - [What is Sass?](#what-is-sass)
+   - [What a CSS preprocessor is?](#what-a-css-preprocessor-is)
+   - [What is Sass?](#what-is-sass-1)
+   - [Difference between Sass and Scss](#difference-between-sass-and-scss)
+   - [How does Sass actually work?](#how-does-sass-actually-work)
+   - [Why should you use Sass?](#why-should-you-use-sass)
+ - [Feature of Sass](#feature-of-sass)
+ - [Variables in Sass](#variables-in-sass)
+ - [Nesting in Sass](#nesting-in-sass)
+ - [Parent Selector - `&`](#parent-selector---)
+ - [Mixin and Include](#mixin-and-include)
+ - [Import and Partials](#import-and-partials)
+ - [Extend and Inheritance](#extend-and-inheritance)
+ - [How to use Conditional statement in SCSS](#how-to-use-conditional-statement-in-scss)
+ - [Function and operators](#function-and-operators)
+   - [Built-in functions](#built-in-functions)
+   - [User-defined functions](#user-defined-functions)
+ - [How to Set Up Sass for Local Development](#how-to-set-up-sass-for-local-development)
+   - [VS Code](#vs-code)
+   - [For Mac OS X or Linux:](#for-mac-os-x-or-linux)
+ - [Tips for using Sass](#tips-for-using-sass)
 
 ##  1. Cascading Style Sheets (CSS)
 
