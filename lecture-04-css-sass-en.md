@@ -13,7 +13,7 @@
     - [Traditional CSS VS BEM CSS](#traditional-css-vs-bem-css)
     - [BEM Naming Convention](#bem-naming-convention)
     - [BEM Naming Rules](#bem-naming-rules)
-  - [Responsive Design Using Media Queries](#responsive-design-using-media-queries)
+  - [Responsive Design Using Media Queries](#Responsive-Design-Using-Media-Queries)
     - [Basic Media Query Syntax](#basic-media-query-syntax)
     - [Common Breakpoints Example](#common-breakpoints-example)
     - [Key Concepts](#key-concepts)
@@ -191,6 +191,12 @@ Codepen Sandbox - [link](https://codepen.io/alice-tang/pen/vYpJxqy)
 **What is BEM?**
 BEM is a popular CSS naming methodology developed by Yandex in 2009. It provides a modular approach to web development by breaking down interfaces into reusable components. The name BEM stands for Block, Element, Modifier – the three core entities that form the foundation of this methodology.
 
+
+
+![](https://i.imgur.com/YYQN5B5.png)
+
+
+
 **Why BEM Became Popular:**
 
 1. **Maintainability**
@@ -327,6 +333,10 @@ Media queries are a fundamental CSS feature that allows us to create responsive 
 ```
 
 ##### 2. **Common Breakpoints**
+
+
+
+![](https://i.imgur.com/6oCgPuv.png)
 
 - Mobile: < 768px
 - Tablet: 768px - 1024px
