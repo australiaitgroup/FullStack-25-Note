@@ -1992,3 +1992,10 @@ Best Practices:
 - Consider TypeScript for better type safety
 - Document the return structure
 
+
+
+#### Interview Practice
+
+![](https://i.imgur.com/6cYR6HS.png)
+
+https://www.fullstack.cafe/interview-questions/javascript
