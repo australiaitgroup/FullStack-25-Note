@@ -4,16 +4,9 @@
 
 > This note is based on the lecture ([link](https://jiangren.com.au/study/lesson?programId=672448ecea33cf003687af93&lessonId=673c41cb0022bb00124fe2ed&tab=content) by Ally Tang. The entire lecture is about CSS (**Cascading Style Sheets**). If doubts, please ask anyone or consult the documentation [W3School](https://www.w3schools.com/html/) and [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML). Happy Coding
 
-## 目录
+## 
 
-- [JavaScript Introduction](#javascript-introduction)
-- [变量 variable](#变量-variable)
-- [JS Data Types](#js-data-types)
-- [Operators](#operators)
-- [Conditional Statements](#conditional-statements)
-- [Loops](#loops)
-- [Arrays 的方法](#arrays的方法)
-- [Functions](#functions)
+
 
 ## JavaScript Introduction
 
@@ -49,7 +42,7 @@ Single-threaded and Asynchronous Programming
 Think of it like a restaurant
 
 Blocking (Synchronouse) Example
-```
+```javascript
 // This is like a waiter who can only serve one table at a time
 console.log("Take order from Table 1");
 // Waiter must wait 2 seconds doing nothing else
@@ -57,7 +50,7 @@ setTimeout(() => console.log("Food ready for Table 1"), 2000);
 console.log("Take order from Table 2"); // Has to wait until Table 1 is complete
 ```
 Non-blocking Execution Explained
-```
+```javascript
 // This is like a waiter who can handle multiple tables efficiently
 console.log("Take order from Table 1");
 // Waiter puts in order and immediately moves on
@@ -69,7 +62,7 @@ console.log("Take order from Table 2"); // Happens immediately
 
 Event Loop is a mechanism that allows JavaScript to handle asynchronous operations efficiently. It manages the execution of tasks in a non-blocking manner, ensuring that the program remains responsive and efficient.
 
-```
+```javascript
 // JavaScript handles async tasks using the event loop
 fetch('https://api.example.com/data')  // Start request
     .then(response => {                // Handle when ready
@@ -112,7 +105,8 @@ async function getData() {
 }
 ```
 
-#####Why It's Important:
+##### Why It's Important:
+
 - User Experience:
   - UI remains responsive while processing
   - No freezing or hanging
@@ -178,16 +172,19 @@ JavaScript can be used for:
    - Interactive web effects and animations
    - Single Page Applications (SPAs)
    - Web APIs and AJAX interactions
+     
 
 2. **Server-side Development**
    - Backend services with Node.js
    - RESTful APIs
    - Real-time applications
    - Microservices
+     
 
 3. **Desktop Applications**
    - Cross-platform desktop apps using Electron
    - Examples: VS Code, Slack, Discord, WhatsApp Desktop
+     
 
 4. **Mobile Development**
    - Mobile apps using frameworks like:
@@ -195,12 +192,15 @@ JavaScript can be used for:
      - Ionic
      - Cordova
      - NativeScript
+       
 
 5. **IoT (Internet of Things)**
    - Smart home devices
    - Embedded systems
    - Sensor networks
    - Using platforms like Johnny-Five
+
+   
 
 6. **Game Development**
    - Browser-based games
@@ -209,10 +209,14 @@ JavaScript can be used for:
      - Three.js
      - Babylon.js
 
+   
+
 7. **AI and Machine Learning**
    - TensorFlow.js for machine learning in browser
    - Natural language processing
    - Computer vision applications
+
+
 
 
 ## Components of JavaScript
@@ -228,7 +232,8 @@ JavaScript consists of three main components:
      - Control structures
      - Functions
      - Object-oriented features
-
+       
+   
 2. **DOM (Document Object Model)**
    - Interface provided by browsers to manipulate web pages
    - Represents HTML/XML documents as tree structures
@@ -237,13 +242,14 @@ JavaScript consists of three main components:
      - Handle events
      - Change styles
      - Add/remove content dynamically
+       
    ```javascript
    // DOM manipulation examples
    document.getElementById('myElement')
    document.querySelector('.myClass')
    element.addEventListener('click', handler)
    ```
-
+   
 3. **BOM (Browser Object Model)**
    - Interface for interacting with the browser window
    - Provides access to:
@@ -260,6 +266,8 @@ JavaScript consists of three main components:
    window.localStorage
    ```
 
+
+
 ## JavaScript Code Placement
 
 There are three ways to include JavaScript in HTML:
@@ -272,6 +280,7 @@ There are three ways to include JavaScript in HTML:
    ```
 
 2. **Internal JavaScript**
+   
    - Embedded within HTML using script tags
    - Useful for page-specific scripts
    ```html
@@ -279,7 +288,7 @@ There are three ways to include JavaScript in HTML:
      alert("Hello, World.");
    </script>
    ```
-
+   
 3. **External JavaScript Files**
    - Best practice for modern web development
    - Benefits:
@@ -292,11 +301,18 @@ There are three ways to include JavaScript in HTML:
    <script src="index.js"></script>
    ```
 
+
 Best Practices:
+
 - Prefer external JavaScript files for larger applications
+
 - Place script tags at the end of the body (for better page loading)
+
 - Use async or defer attributes when appropriate
+
 - Keep inline JavaScript to a minimum
+
+  
 
 
 ## Variable
@@ -312,7 +328,9 @@ In computer science,  a variable is simply a named area of a program's memory sp
 
 
 ![](https://i.imgur.com/k58h2H6.png)
-  
+
+
+
 ### Comparison of Variable Declarations
 
 | Feature | `let` | `const` | `var` |
@@ -324,7 +342,9 @@ In computer science,  a variable is simply a named area of a program's memory sp
 | Temporal Dead Zone | ✅ Has TDZ | ✅ Has TDZ | ❌ No TDZ |
 | Global Object Property | ❌ No | ❌ No | ✅ Yes |
 
+
 Example Usage:
+
 ```javascript
 // let - for variables that need reassignment
 let count = 1;
@@ -339,10 +359,16 @@ var message = "hello";
 var message = "hi"; // OK but not recommended
 ```
 
-- Variables declared with `var` are hoisted and initialized with `undefined`, while `let` variables are hoisted but not initialized, creating a Temporal Dead Zone.
+
+
+Variables declared with `var` are hoisted and initialized with `undefined`, while `let` variables are hoisted but not initialized, creating a Temporal Dead Zone.
+
+
 
 > What is the Temporal Dead Zone (TDZ) in JavaScript?
 > The Temporal Dead Zone is the period between entering a scope and the declaration of a variable, where accessing the variable results in a ReferenceError.
+>
+> 
 
 
 #### Use `var` to define a variable
@@ -350,22 +376,28 @@ var message = "hi"; // OK but not recommended
 Note:
 - It is common to test your knowledge about var. e.g. disadvantages of using `var` to define a variable and why we should avoid using it.
 
+
+
 ##### 1. var hoisting
 
 
 ![](https://i.imgur.com/ekSRuh3.png)
-
 
 `console.log(test);` is before the declaration of `test`, but it is not an error and it will return `undefined` if you console.log it. This is because `var` hoisting. In general, any variable used before it is declared will throw an error but `var` defines the variable in JavaScript, it will return `undefined`.
 
 ##### 2. `var` can be re-assigned
 ![](https://i.imgur.com/9horaRa.png)
 
+
+
 ##### 3. `var` has function scope before ES6
 
 ![](https://i.imgur.com/4UxpHrr.png)
 
+
+
 Due to the local scope of the function, the variable `num1` is not defined outside the function. Hence , it will throw an error of `Uncaught ReferenceError: num1 is not defined` if you `console.log` it.
+
 
 ##### 4. `var` does not have block scope
 
@@ -383,7 +415,7 @@ In summary:
 
 
 
-````js
+```javascript
   // for example, a variable defined with var in a function is not defined outside the function
 
   function fun() { // function scope
@@ -397,30 +429,34 @@ In summary:
            }
            console('a',a) //-> a,1
            // this demonstrates that for var, if does not have a block scope, and the variable a can be accessed outside the if statement
-           ```
-          
 ```
+
+
 
 - After ES6, let and const set block scope (as a way to fix the issue of `var` hoisting)
 
-> What does a `variable scope` mean?
-> - A variable scope refers to where a variable can be accessible by the variable's name (an identifier) in the program.
+What does a `variable scope` mean?
 
-> What is a function scope in JavaScript?
-> - Functions define a new scope for local variables
-> - Variables defined inside a function are not accessible outside the function
+- A variable scope refers to where a variable can be accessible by the variable's name (an identifier) in the program.
 
+What is a function scope in JavaScript?
 
-> What is an inner scope in JavaScript?
-> - An inner scope is a block of code that is enclosed within a function or a block of code.
-> - Variables defined inside an inner scope are not accessible outside the inner scope.
+- Functions define a new scope for local variables
+- Variables defined inside a function are not accessible outside the function
 
-> What is a block scope in JavaScript?
-> - Block scope refers to segments of one or more statement and expressions grouped by a pair of curly brace.
-> - Variables defined inside a block scope are not accessible outside the block scope.
+What is an inner scope in JavaScript?
 
-> What is a variable shadowing?
-> - Variables in inner scope can access variables from the outer scope.
+- An inner scope is a block of code that is enclosed within a function or a block of code.
+- Variables defined inside an inner scope are not accessible outside the inner scope.
+
+What is a block scope in JavaScript?
+
+- Block scope refers to segments of one or more statement and expressions grouped by a pair of curly brace.
+- Variables defined inside a block scope are not accessible outside the block scope.
+
+What is a variable shadowing?
+
+- Variables in inner scope can access variables from the outer scope.
 
 
 
@@ -442,7 +478,7 @@ try {
 }
 ```
 
-Naming Conventions
+### Naming Conventions
 
 ![](https://i.imgur.com/iqTqCpc.png)
 
@@ -452,20 +488,22 @@ Naming Conventions
 
 - Camel Case is the most common naming convention in JavaScript
 
-## JS Data Types
+### JS Data Types
 
 > JS is a weakly typed language
 
-Data Types in JavaScript:
+#### Data Types in JavaScript:
 
-1.  Primitive Data Types (基本数据类型 )
+1.  ##### Primitive Data Types (基本数据类型 )
+    
     - Number, Boolean, String, Undefined, Null
       ![](https://i.imgur.com/1WouK2R.png)
-2.  Reference Data Types (引用数据类型 )
+2.  ##### Reference Data Types (引用数据类型 )
+    
     - Function, Array, Object
     - it stores the address, not the value
 
-JS Type Conversion
+#### JS Type Conversion
 
 - String + other types, the result is always a string type
    Dynamic data manipulation
@@ -507,17 +545,17 @@ console.log("5" + 6); //-> "56"
   console.log(Boolean("hello")); //-> true
   ```
 
-## Operators
+### Operators
 
 How to check a variable's data type
 
-1. You can use `typeof` to check the data type of a variable
+1. #### You can use `typeof` to check the data type of a variable
 
 ![](https://i.imgur.com/SRuiuJs.png)
 
 
 
-### Checking Data Types with `typeof`
+#### Checking Data Types with `typeof`
 
 ```javascript
 // Numbers
@@ -574,13 +612,13 @@ Important Notes:
 
 
 
-2. Use `instanceof` to check the data type of a variable for object mostly
+2. #### Use `instanceof` to check the data type of a variable for object mostly
 
 ![](https://i.imgur.com/sqHSL6g.png)
 
 
 
-### Using `instanceof` for Type Checking
+#### Using `instanceof` for Type Checking
 
 ```javascript
 // Basic Objects
@@ -626,7 +664,8 @@ Key Differences from `typeof`:
 3. Doesn't work with primitive types
 4. Can check inheritance relationships
 
-Common Use Cases:
+##### Common Use Cases:
+
 ```javascript
 // Error checking
 try {
@@ -696,7 +735,7 @@ This is why we often use:
 
 
 
-3.  Use `Array.isArray()` to check if a variable is an array
+3.  #### Use `Array.isArray()` to check if a variable is an array
 
 
 `Array.isArray()` is a method introduced in HTML5 (supported in IE9 and above) that specifically checks if a value is an array.
@@ -761,14 +800,16 @@ console.log(null === undefined); //-> false
 
 #### Increment and Decrement Operators
 
-- Prefix increment operator `++a`
+- ##### Prefix increment operator `++a`
+  
   - The rule: first add, then return the value
   ```js
   let a = 1;
   console.log(++a); //-> 2
   console.log(a); //-> 2
   ```
-- Postfix increment operator `a++`
+- ##### Postfix increment operator `a++`
+  
   - The rule: first return the value, then add
   ```js
   let a = 1;
@@ -776,16 +817,27 @@ console.log(null === undefined); //-> false
   console.log(a); //-> 2
   ```
 
-比较运算符
+
+
+
+
+
+
+#### Arithmetic Operators
 
 ![](https://i.imgur.com/vzoLk2k.png)
+
+
+
+#### Comparasion Operator
+
 ![](https://i.imgur.com/vngcQM4.png)
 
 - `==` and `===`
   -  `==` will convert the data type of the variable to the same type before comparison, while `===` will not
   - `==` is rarely used in work, and `===` is required
 
-### Logical Operators
+#### Logical Operators
 
 - `&&`
   - `console.log(3 > 5 && 3 > 2);`
@@ -797,11 +849,11 @@ console.log(null === undefined); //-> false
   - `console.log(!(3 > 5));`
   - Logical NOT operator `!` the opposite of the value; `!true` return `false`
 
-### Operator Precedence
+#### Operator Precedence
 
 ![](https://i.imgur.com/qTiSqB0.png)
 
-Spread Operator `...`
+#### Spread Operator `...`
 
 1. copy array
    ```js
@@ -860,7 +912,7 @@ let { name, age, gender: "male"} = user;
 console.log(gender); //-> "male"
 ```
 
-### Use Case: Destructuring Assignment 
+#### Use Case: Destructuring Assignment 
 
 ```js
 // 1. 交换变量
@@ -896,7 +948,7 @@ function sum(first, ...args) {
 sum(10, 20, 30);
 ```
 
-## Conditional Statements
+### Conditional Statements
 
 - Use Conditional Statements to make decisions
 - `if else`
@@ -908,7 +960,7 @@ Compound Ternary Operator (复合三元表达式)
 
 - `(a > b) ? 1 : 0;`
 
-## Loops
+### Loops
 
 - `for` loop
 - `while` loop
@@ -925,7 +977,7 @@ Compound Ternary Operator (复合三元表达式)
   - `continue`: Exit the current loop and proceed to the next iteration
   - `break`: Exit the entire loop
 
-## Array Methods
+### Array Methods
 
 - `push()`
 - `shift()`
@@ -975,22 +1027,22 @@ Compound Ternary Operator (复合三元表达式)
 > For example, `concat` is more resource-intensive than `push()`, so if you are allowed to change the original array, choose to change the original array
 > If you are required not to change the original array, you can only copy it
 
-## Functions
+### Functions
 
 Difference between `function declaration` and `function expression`
 
 - function declaration
   `js
-function fun(a, b){
+  function fun(a, b){
    console.log(a, b)
-}
-`
+  }
+  `
 - function expression
   `js
-const fun = function(a, b){
+  const fun = function(a, b){
    console.log(a, b)
-}
-`
+  }
+  `
 - Arrow Function (箭头函数)
   `js
   const fun = (a, b) => {
@@ -1015,7 +1067,7 @@ const fun = function(a, b){
 
 // ... existing content ...
 
-### Array Shallow Copy Methods
+#### Array Shallow Copy Methods
 
 1. **Using Lodash (Simplest)**
 ```javascript
@@ -1083,9 +1135,9 @@ Best Practices:
 
 
 
-### Object Shallow Copy Methods
+#### Object Shallow Copy Methods
 
-1. **Spread Operator (Modern, Most Common)**
+1. ##### **Spread Operator (Modern, Most Common)**
 ```javascript
 // Basic usage
 const original = { name: 'John', age: 30 };
@@ -1102,7 +1154,7 @@ const settings = { ...defaults, ...userPrefs };
 console.log(settings); // { theme: 'dark', language: 'fr' }
 ```
 
-2. **Object.assign() Method**
+2. ##### **Object.assign() Method**
 ```javascript
 // Basic copying
 const original = { name: 'John', age: 30 };
@@ -1180,7 +1232,7 @@ Summary:
 
 #### Deep Copy Methods  (深拷贝)
 
-1. **Using Lodash's cloneDeep (Recommended)**
+1. ##### **Using Lodash's cloneDeep (Recommended)**
 ```javascript
 const _ = require('lodash');
 
@@ -1206,12 +1258,12 @@ console.log(original.hobbies[1].name);  // 'basketball' - unchanged!
 console.log(deepCopy.hobbies[1].name);  // 'football'
 ```
 
-2. **Using JSON methods (Simple but limited)**
+2. ##### **Using JSON methods (Simple but limited)**
 ```javascript
 const deepCopy = JSON.parse(JSON.stringify(original));
 ```
 
-3. **Using structuredClone (Modern browsers)**
+3. ##### **Using structuredClone (Modern browsers)**
 ```javascript
 const deepCopy = structuredClone(original);
 ```
@@ -1339,7 +1391,7 @@ Common Use Cases:
 
 #### Destructuring assignment
 
-Array Destructuring
+##### Array Destructuring
 
 When discussing objects, you might hear:
 ```javascript
@@ -1370,12 +1422,12 @@ obj.bar //-> "asd"
 
 There are two ways to access object properties:
 
-1. **Dot Notation**
+1. ###### **Dot Notation**
 ```javascript
 obj.bar
 ```
 
-2. **Bracket Notation**
+2. ###### **Bracket Notation**
 ```javascript
 obj["bar"]
 ```
@@ -1432,7 +1484,7 @@ Best Practices:
 
 The `...` in destructuring (called the "rest pattern") collects remaining elements into an array.
 
-1. **Basic Array Destructuring with Rest**
+1. ###### **Basic Array Destructuring with Rest**
 ```javascript
 let [first, second, ...rest] = [1, 2, 3, 4, 5];
 
@@ -1441,13 +1493,13 @@ console.log(second); // 2
 console.log(rest);   // [3, 4, 5]
 ```
 
-2. **Skipping Elements**
+2. ###### **Skipping Elements**
 ```javascript
 let [, , ...remainingItems] = [1, 2, 3, 4, 5];
 console.log(remainingItems); // [3, 4, 5]
 ```
 
-3. **Function Parameters**
+3. ###### **Function Parameters**
 ```javascript
 function printScores(firstPlace, secondPlace, ...otherPlaces) {
     console.log('Winner:', firstPlace);
@@ -1461,7 +1513,7 @@ printScores('Alice', 'Bob', 'Charlie', 'David');
 // Others: ['Charlie', 'David']
 ```
 
-4. **Combining with Default Values**
+4. ###### **Combining with Default Values**
 ```javascript
 let [first = 'default', ...others] = [];
 console.log(first);   // 'default'
@@ -1774,11 +1826,12 @@ function UserCard({
 }
 ```
 
-##### Use Case: Destructuring Assignment 
+#### Use Case: Destructuring Assignment 
 
- 1. Variable Swapping
+ 1. ##### Variable Swapping
 
-Simple Variable Swapping
+###### Simple Variable Swapping
+
 ```js
 let num1 = 1;
 let num2 = 2;
@@ -1801,8 +1854,8 @@ let y = 10;
 [x, y] = [y, x];  // Clean and elegant!
 ```
 
+###### Multiple Value Swaps
 
-Multiple Value Swaps
 ```javascript
 // Swap multiple values at once
 let [a, b, c] = [1, 2, 3];
@@ -1811,9 +1864,10 @@ console.log(a, b, c); // 3, 1, 2
 ```
 
 
-2. Returning Multiple Values from Functions
+2. ##### Returning Multiple Values from Functions
 
-Return as array  
+###### Return as array  
+
 ```javascript
 function example(){
    return [1, 2, 3];
@@ -1832,7 +1886,7 @@ let {sum1, sum2} = example2();
 
 
 
-3. **Algorithm Implementation**
+3. ##### **Algorithm Implementation**
 ```javascript
 // Common in sorting algorithms
 function bubbleSort(arr) {
@@ -1847,7 +1901,7 @@ function bubbleSort(arr) {
 }
 ```
 
-4. **State Management**
+4. ##### **State Management**
 ```javascript
 // Common in React or state management
 const [first, second] = useState(['old', 'new']);
@@ -1863,9 +1917,9 @@ Benefits:
 - Single line solution
 
 
-##### Use Case: Returning Multiple Values from Functions
+#### Use Case: Returning Multiple Values from Functions
 
-1. **Using Array Return**
+1. ##### **Using Array Return**
 ```javascript
 // Function returning multiple values as array
 function getCoordinates() {
@@ -1879,7 +1933,7 @@ console.log(y);    // 300
 console.log(unit); // 'pixel'
 ```
 
-2. **Using Object Return**
+2. ##### **Using Object Return**
 ```javascript
 // Function returning multiple values as object
 function getUserInfo() {
@@ -1897,7 +1951,7 @@ console.log(age);     // 30
 console.log(isAdmin); // true
 ```
 
-3. **Common Real-World Examples**
+3. ##### **Common Real-World Examples**
 ```javascript
 // React Hooks
 function useWindowSize() {
@@ -1922,7 +1976,7 @@ function fetchUserData() {
 const { data, status } = fetchUserData();
 ```
 
-4. **With Default Values**
+4. ##### **With Default Values**
 ```javascript
 function getConfig() {
     return ['localhost', 3000];
