@@ -47,8 +47,7 @@ BEM (块 block、元素 element、修饰符 modifier)：
 
   > 在 vue, react 中，在较小的组件中可以不用。对于公共的，全局的模块，还是推荐使用 bem
 
-  例如：
-  ![css bem](./assets/images/css_bem.jpg)
+ 
 
   > BEM 只是所有命名方式其中一种流行命名方式  
   > 工作中也有其他命名方式，具体看公司规定  
@@ -151,7 +150,7 @@ body {
 ### 1.5 Transition:
 
 在 CSS 中，transition 是一种用来控制属性值在一定时间范围内平滑过渡的属性。它允许你在元素属性值发生变化时，使变化过程变得更加平滑和渐进，而不是突然改变。
-![css bem](./assets/images/css_transition.png)
+
 语法：
 
 ```css

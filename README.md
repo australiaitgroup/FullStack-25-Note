@@ -12,8 +12,9 @@ This repo serves as a complementary material for the 25th fullstack bootcamp at 
 | ----------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Lecture02 HTML & CSS - Part 1 | [Click Me](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-02-html-css-part-1-en.md) | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-02-html-css-part-1-ch.md) |
 | Lecture03 HTML & CSS - Part 2 | [Click Me](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-03-html-css-part-2-en.md) | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-03-html-css-part-2-ch.md) |
-| Lecture04 CSS & Sass          | [Click Me](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-04-css-sass-en.md) | TODO                                                         |
-| Lecture05 JavaScript          | [Click Me](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/Lecture-05-JavaScript-en.md) | TODO                                                         |
+| Lecture04 CSS & Sass          | [Click Me](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-04-css-sass-en.md) | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-04-CSS-Sass-notes-ch.md)        |                                               
+| Lecture05 JavaScript          | [Click Me](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/Lecture-05-JavaScript-en.md) | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-05-JavaScript-Note-ch.md)                                                         |
+| Lecture06 Git                 | [Click Me](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-06-git-en.md) | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-06-git-notes-ch.md)                                                         |
 
 
 

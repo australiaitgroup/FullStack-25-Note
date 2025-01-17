@@ -18,7 +18,6 @@
 
 ## 2. Centralized & Distributed Version Control
 
-![git_central_and_distributed](./assets/images/git_central_and_distributed.png)
 
 ### 2.1 集中式（subversion为代表）
 工作文件全部存在central repository, 工作人员把需要工作的文件从central repository中下载了下来，更新修改并完成提交（`commit`）; 这位工作人员在本地的文件只有download下来修改的文件
@@ -77,7 +76,7 @@ https://git-scm.com/
 > 如果Mac版本code命令不工作，可以参考 :https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
 
 ### 4.2 git 的工作流程
-![git_summary](./assets/images/git_summary.jpg)
+
 
 ### 4.3 创建 Local Repository  
 使用命令
@@ -87,7 +86,6 @@ https://git-scm.com/
 - `git clone` (只有拉取remote repository时才有用)
 ### 4.4 Git 的本地工作流程
 本地commit (也叫checkin)：分为两步
-![git_working_process](./assets/images/git_working_process.jpg)
 - Step one: stage  
   - 命令行工具
     - stage: `git add <filename>`
@@ -108,9 +106,6 @@ https://git-scm.com/
     Answer：是的
   - 也可以在 VS Code 左侧的 Source Control 面板查看和操作 git commit。
 
-  Commit 的 message 可以遵循以下格式：
-
-  ![commit_msg_format](./assets/images/commit_msg_format.png)
 
 > 好用的 VScode Git 插件  
 https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory

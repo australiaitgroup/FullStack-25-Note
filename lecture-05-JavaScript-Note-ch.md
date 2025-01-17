@@ -80,7 +80,7 @@ JS 代码/文件的书写位置
 声明与赋值
 
 - 变量在使用前需要先声明，声明的本质是为变量分配内存空间。常用的声明变量的关键字有 let、const 和 var，它们有一些区别
-  ![var_let_const](./assets/images/var_let_const.jpg) - let： 具有块级作用域，可重新赋值。 - const： 具有块级作用域，不可重新赋值，适用于常量。 - var： 具有函数作用域（没有块级作用域），存在变量提升（Hoisting），可重复声明和重新赋值，容易导致全局变量污染。
+- let： 具有块级作用域，可重新赋值。 - const： 具有块级作用域，不可重新赋值，适用于常量。 - var： 具有函数作用域（没有块级作用域），存在变量提升（Hoisting），可重复声明和重新赋值，容易导致全局变量污染。
 
   ````js
   // 比如说在函数内 var 的变量在函数外事 not defined
@@ -104,10 +104,10 @@ JS 代码/文件的书写位置
   ````
 
 命名规范
-![js_variable_naming_convention](./assets/images/js_variable_naming_convention.jpg)
+
 
 - 变量，属性，函数，参数 取名不能是关键字和保留字
-  ![js_keyword](./assets/images/js_keyword.jpg)
+
 - 常使用驼峰命名法
 
 ## JS Data Types
@@ -118,7 +118,7 @@ JS 代码/文件的书写位置
 
 1.  基本数据类型
     - Number, Boolean, String, Undefined, Null
-      ![js_data_basic_type](./assets/images/js_data_basic_type.jpg)
+     
 2.  引用数据类型
     - Function, Array, Object
     - 存储的是地址，而不是 value
@@ -171,11 +171,10 @@ console.log("5" + 6); //-> "56"
 
 1. 使用 typeof 判断数据类型
 
-   ![js_typeof](./assets/images/js_typeof.jpg)
 
 2. 使用 instanceof 判断数据类型
 
-   ![js_instanceif](./assets/images/js_instanceif.jpg)
+
 
 3. 判断 Array
    - Array.isArray()
@@ -212,9 +211,6 @@ console.log("5" + 6); //-> "56"
 
 比较运算符
 
-![js_compare_1](./assets/images/js_compare_1.jpg)
-![js_compare_2](./assets/images/js_compare_2.jpg)
-
 - == 和 ===
   - 两个等号很少用，工作当中基本都要求使用全等 ===
 
@@ -231,7 +227,7 @@ console.log("5" + 6); //-> "56"
   - 取反
 
 运算符优先级
-![js_compare_priority](./assets/images/js_compare_priority.jpg)
+
 
 Spread Operator `...`
 
