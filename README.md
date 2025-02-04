@@ -17,7 +17,7 @@ This repo serves as a complementary material for the 25th fullstack bootcamp at 
 | Lecture06 Git                 | [Click Me](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-06-git-en.md) | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-06-git-notes-ch.md)      
 | Lecture07 JavaScript ES6 Part 1 | TODO | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-07-javascript-es6-part1-ch.md)      
 | Lecture08 JavaScript ES6 Part 2 | TODO| [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-08-javascript-es6-part2-ch.md)      
-| Lecture09 React - Part 1 | TODO | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-09-react-part1-ch.md)
+| Lecture09 React - Part 1 | TODO | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-09-react-part1-note-ch.md)
 
 
 
