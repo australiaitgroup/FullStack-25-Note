@@ -19,6 +19,7 @@ This repo serves as a complementary material for the 25th fullstack bootcamp at 
 | Lecture10 React - Part 2        | TODO                                                                                                         | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-10-react-part2-note-ch.md)     |
 | Lecture11 React - Part 3        | TODO                                                                                                         | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-11-react-part3-note-ch.md)     |
 | Lecture 12 React - Part 4       | TODO                                                                                                         | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-12-react-part4-note-ch.md)     |
+| Lecture 13 NodeJS - Part 1      | TODO                                                                                                         | [传送门](https://github.com/australiaitgroup/FullStack-25-Note/blob/main/lecture-13-nodejs-part1-note-ch.md)    |
 
 ### Communication Channel
 
